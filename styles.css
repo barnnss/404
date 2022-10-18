@@ -65,10 +65,35 @@
 .header .header-1 .icons div:hover,
 .header .header-1 .icons a:hover{
     color:grey;
-}
 
 #search-btn{
     display: none;
+}
+.header .header-2{
+    background: #141414;
+}
+
+.header .header-2 .navbar{
+    text-align: center;
+}
+
+.header .header-2 .navbar a{
+    color:#fff;
+    display: inline-block;
+    padding:1.2rem;
+    font-size: 1.7rem;
+}
+
+.header .header-2 .navbar a:hover{
+    background: grey;
+}
+
+.header .header-2.active{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+
+}
 }
 #mobile-menu {
     position: absolute;
@@ -134,19 +159,6 @@
     color: white;
 }
 
-.main__btn { 
-    font-size: 1rem;
-    background-iamge: linear-gradient(to top, #68413d 0%, #1d050b 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: black
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    outline: none;
-}
 
 .main__btn:hover {
     background:grey;
@@ -201,10 +213,6 @@
         margin-top: 2rem;
         font-size: 1.5rem;
     }
-.main__btn{
-    padding: 12px 36px;
-    margin: 2.5rem, 0;
-}
 }
 
 /*Footer*/
@@ -328,7 +336,8 @@
     width: 100%;
     margin:.7rem 0;
     font-size: 1.6rem;
-    border:var(--border);
+    border:0.5rem;
+    border-color: #141414;
     border-radius: .5rem;
     padding:1rem 1.2rem;
     color:var(--black);
@@ -344,36 +353,35 @@
 
 .login-form-container form .checkbox label{
     font-size: 1.5rem;
-    color:var(--light-color);
+    color:#141414;
     cursor: pointer;
 }
 
 .login-form-container form .btn{
     text-align: center;
-    width:100%;
-    margin:1.5rem 0;
+    width:50%;
+    margin:3rem 0;
 }
 
 .login-form-container form p{
     padding-top: .8rem;
-    color:var(--light-color);
+    color:#141414;
     font-size: 1.5rem;
 }
 
 .login-form-container form p a{
-    color:var(--green);
+    color:#141414;
     text-decoration: underline;
 }
 
 .login-form-container #close-login-btn{
     position: absolute;
     top:1.5rem; right:2.5rem;
-    font-size: 5rem;
+    font-size: 3rem;
     color:var(--black);
     cursor: pointer;
 }
-/*Get Started*/
-.getstarted-form-container .getstarted-form-container .box{
+.featured .featured-slider .box{
     margin:2rem 0;
     position: relative;
     overflow: hidden;
@@ -381,24 +389,24 @@
     text-align: center;
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box:hover{
+.featured .featured-slider .box:hover{
     border:var(--border-hover);
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box .image{
+.featured .featured-slider .box .image{
     padding:1rem;
     background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box:hover .image{
+.featured .featured-slider .box:hover .image{
     transform: translateY(6rem);
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box .image img{
+.featured .featured-slider .box .image img{
     height: 25rem;
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box .icons{
+.featured .featured-slider .box .icons{
     border-bottom: var(--border-hover);
     position: absolute;
     top:0; left:0; right: 0;
@@ -407,41 +415,24 @@
     transform: translateY(-105%);
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box:hover .icons{
+.featured .featured-slider .box:hover .icons{
     transform: translateY(0%);
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box .icons a{
-    color:var(--black);
+.featured .featured-slider .box .icons a{
+    color:#141414;
     font-size: 2.2rem;
     padding:1.3rem 1.5rem;
 }
 
-.getstarted-form-container .getstarted-form-container-slider .box .icons a:hover{
+.featured .featured-slider .box .icons a:hover{
     background:var(--green);
     color:#fff;
 }
 
-.getstarted-form-container .getstarted-form-container .box .content{
+.featured .featured-slider .box .content{
     background:#eee;
     padding:1.5rem;
-}
-
-.getstarted-form-container .getstarted-form-container .box .content h3{
-    font-size: 2rem;
-    color:var(--black);
-}
-
-.getstarted-form-container .getstarted-form-container-slider .box .content {
-    font-size: 2.2rem;
-    color:var(--black);
-    padding-top: 1rem;
-}
-
-.getstarted-form-container .getstarted-form-container-slider .box .content span{
-    font-size: 1.5rem;
-    color:var(--light-color);
-    text-decoration: line-through;
 }
 
 .swiper-button-next,
