@@ -1,190 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Review</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a7dbdcfa2b.js" 
-    crossorigin="anonymous"></script>
-    
-</head>
-<body>
- <!-- header section starts  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readssy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a7dbdcfa2b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header section starts  -->
 
-<header class="header">
+    <div class="one">
+      <header class="header">
+        <div class="header-1">
+          <a href="#" class="logo"> <i class="fas fa-pen"></i> READSSY </a>
 
-    <div class="header-1">
-
-        <a href="#" class="logo"> <i class="fas fa-pen"></i> READSSY </a>
-
-        <form action="" class="search-form">
-            <input type="search" name="" placeholder="Search here..." id="search-box">
+          <form action="" class="search-form">
+            <input
+              type="search"
+              name=""
+              placeholder="Search here..."
+              id="search-box"
+            />
             <label for="search-box" class="fas fa-search"></label>
-        </form>
+          </form>
 
-        <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <div id="login-btn" class="fas fa-user"></div>
+          <div class="icons">
+            <!-- <div class="heart"><a href="#" class="fas fa-heart"></a></div> -->
+            <div id="login-btn">
+              <a href="login.html" class="fas fa-user"></a>
+            </div>
+            <div class="con-icon">
+              <a
+                href="contact.html"
+                class="social__icon--link"
+                target="_parent"
+              >
+                <i class="fa fa-phone"></i>
+              </a>
+            </div>
+          </div>
         </div>
-
-    </div>
-    <div class="header-2">
-        <nav class="navbar"> 
+        <!-- <div class="header-2">
+          <nav class="navbar">
             <a href="#featured">Featured</a>
-        </nav>
-    </div>
-</header>
+          </nav>
+        </div> -->
+      </header>
+      <!-- header section ends -->
 
-<!-- header section ends -->  
-<!--Main Section-->
-<div class="main">
-<div class="main__container">
-    <div class="main__content">
-        <h1>For Quality Review</h1>
-        <h2>To find your next Read</h2>
-        <p>See what makes us different!</p>
-    </div>
-    <div class="main__img--container">
-        <img src="images/pic1.svg"
-        alt="pic" id="main__img"/>
-    </div>
-</div>
-</div>
-<!--Footer section-->
-<div class="footer__container">
-    <div class="footer__link">
-        <div class="footer__link--wrapper">
-            <div class="footer__link--items">
-                <h2>About Us</h2>
-                <a href="/">How it works</a>
-                <a href="/">Terms of Services</a>
-            </div>
+      <!--Main Section-->
+      <div class="main">
+        <div class="main__container">
+          <div class="main__content">
+            <h1>For Quality Review</h1>
+            <h2>To find your next Read</h2>
+            <p>See what makes us different!</p>
+            <a href="feature.html"><button>Get Started</button> </a>
+          </div>
+          <div class="main__img--container">
+            <img src="images/pic1.svg" alt="pic" id="main__img" />
+          </div>
         </div>
-        <div class="footer__link--wrapper">
+      </div>
+
+      <!--Footer section-->
+      <div class="footer__container">
+        <div class="footer__link">
+          <div class="footer__link--wrapper">
             <div class="footer__link--items">
-                <h2>Social Medias</h2>
-                <a href="/">Facebook</a>
-                <a href="/">Instagram</a>
+              <h2>About Us</h2>
+              <a href="/">How it works</a>
+              <a href="service.html">Terms of Services</a>
             </div>
-        </div>
-        <div class="social__media">
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>Social Medias</h2>
+              <div class="FB">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              </div>
+              <div class="IG">
+                <a href="https://www.instagram.com" target="_blank"
+                  >Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="social__media">
             <div class="social__media--wrap">
-                <div class="social__icons">
-                 <a href="/" class="social__icon--link" target="_blank">
-                <i class="fa fa-facebook"></i></a>
-                <a href="/" class="social__icon--link" target="_blank">
-                <i class="fa fa-instagram"></i></a>
+              <div class="social__icons">
+                <a
+                  href="https://www.facebook.com"
+                  class="social__icon--link"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com"
+                  class="social__icon--link"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram" id="IG_icon"></i
+                ></a>
+              </div>
             </div>
-    </div>
-    </div>
-    </div>
-    <!--Signup-->
-    <div class="login-form-container">
-
-        <div id="close-login-btn" class="fas fa-times"></div>
-    
-        <form action="">
-            <h3>sign in</h3>
-            <span>USERNAME</span>
-            <input type="email" name="" class="box" placeholder="Enter your email" id="">
-            <span>PASSWORD</span>
-            <input type="password" name="" class="box" placeholder="Enter your password" id="">
-            <div class="checkbox">
-                <input type="checkbox" name="" id="remember-me">
-                <label for="remember-me"> Remember Me</label>
-            </div>
-            <input type="submit" value="SIGN IN" class="btn">
-            <p>Forget Password ? <a href="#">click here</a></p>
-            <p>Don't have an account ? <a href="#">create one</a></p>
-        </form>
-    
-    </div>
-    <!--featured section-->
-    <section class="featured" id="featured">
-
-        <h1 class="heading"> <span>featured books</span> </h1>
-    
-        <div class="swiper featured-slider">
-    
-            <div class="swiper-wrapper">
-    
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="image">
-                        <img src="images/book-1.jfif" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="btn">Read the review</a>
-                    </div>
-                </div>
-    
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="image">
-                        <img src="images/book-2.jfif" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="btn">Read the review</a>
-                    </div>
-                </div>
-    
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="image">
-                        <img src="images/book-3.jfif" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="btn">Read the review</a>
-                    </div>
-                </div>
-    
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="image">
-                        <img src="images/book-4.jfif" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="btn">Read the review</a>
-                    </div>
-                </div>
-    
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="image">
-                        <img src="images/book-5.jfif" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="btn">Read the review</a>
-                    </div>
-                </div>
-    
-                <div class="swiper-slide box">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                    </div>
-                    <div class="image">
-                        <img src="images/book-6.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <a href="#" class="btn">Read the review</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-
-<script src="app.js"></script>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
