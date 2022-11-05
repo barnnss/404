@@ -19,7 +19,7 @@
   background-size: cover;
   position: absolute;
   /* position: relative; */
-  background-attachment: fixed;
+  background-attachment:scroll;
   background-repeat: no-repeat;
 
 }
@@ -30,11 +30,25 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(./images/book.jpeg);
   background-position: center;
-  background-size: cover;
+  background-size:100%;
   /* position: absolute; */
   /* position: relative; */
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+}
+
+footer{
+	padding-top: 60px;
+	background: url(images/book.jpeg);
+	background-color: #ddd;
+	height: 360px; 
+  background-position: center;
+  background-size:100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+	
+   
 
 }
 
@@ -92,7 +106,8 @@
 .header .header-1 .icons div,
 .header .header-1 .icons a {
   font-size: 1.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
+  align-items: flex-start;
   color: white;
   cursor: pointer;
 }
@@ -109,8 +124,9 @@
   left: 72rem;
 }
 
+
 .icons .con-icon{
-  position: relative;
+  position:relative;
   left: 13.4rem;
   bottom: 30px;
 }
@@ -122,6 +138,8 @@
   transition: 0.3s ease-out;
 }
 
+
+
 .icons .con-icon .social__icon--link:hover{
     background: linear-gradient(to right, #ff105f, #ffad06);
   -webkit-text-fill-color: transparent;
@@ -129,29 +147,6 @@
   transition: 0.3s ease-out;
 }
 
-
-/* .header .header-1 .icons div:hover,
-.header .header-1 .icons a:hover{
-    color:grey; */
-
-/* .header .header-2{
-    background: #141414;
-} */
-
-/* .header .header-2 .navbar{
-    text-align: center;
-} */
-
-/* .header .header-2 .navbar a{
-    color:#fff;
-    display: inline-block;
-    padding:1.2rem;
-    font-size: 1.7rem;
-} */
-
-/* .header .header-2 .navbar a:hover{
-    background: grey;
-} */
 
 .header .header-2.active {
   position: fixed;
